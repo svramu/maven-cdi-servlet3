@@ -18,7 +18,7 @@ import javax.sql.DataSource;
 public class SqlSessionFactoryProvider {
 
 	@Resource 
-	DataSource MySQLDS;
+	DataSource MySQLDS;//This area requires improvements for JEE6 annotation based model.
 	
 	@Produces
 	@ApplicationScoped
