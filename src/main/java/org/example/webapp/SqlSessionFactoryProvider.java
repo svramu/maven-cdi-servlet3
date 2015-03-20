@@ -17,6 +17,7 @@ public class SqlSessionFactoryProvider {
 
   //NOTE: ensure to create DS in WildFly with JNDI name "java:/chirpDS"
   //No web.xml entry is required for JavaEE 6
+  //Also, ensure that mysql driver is deployed in wildfly before creating DS
 	@Resource(lookup="chirpDS")
 	DataSource chirpDS;
 	
