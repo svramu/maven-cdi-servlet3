@@ -27,7 +27,7 @@ public class SqlSessionFactoryProvider {
 		TransactionFactory transactionFactory = new JdbcTransactionFactory();
 		Environment environment = new Environment("development", transactionFactory, chirpDS);
 		Configuration configuration = new Configuration(environment);
-		configuration.addMapper(UserDao.class); 
+		configuration.addMapper(PersonDao.class); 
 		SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(configuration);
 		return sqlSessionFactory;
 	}
